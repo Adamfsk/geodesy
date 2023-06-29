@@ -294,7 +294,7 @@ class Latlon_Utm_Mgrs extends LatLonEllipsoidal {
      */
     toUtm(zoneOverride=undefined) {
         const utm = super.toUtm(zoneOverride);
-        return new Utm_Mgrs(utm.zone, utm.hemisphere, utm.easting, utm.northing, utm.datum, utm.convergence, utm.scale);
+        return new Utm_Mgrs(utm.zone, utm.hemisphere, utm.easting, utm.northing, utm.datum, utm.convergence, utm.scale, false);
     }
 
 }
